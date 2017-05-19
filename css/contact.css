@@ -1,0 +1,132 @@
+	/****************************************************************************************
+	* Author: James Hickey																	*
+	* Assignment: WE4.0 PHP Web App Assignment, Digital Skills Academy						*
+	* Student ID: D14128624																	*
+	* Email: james.hickey@webelevate.ie														*
+	* Date : 2016/02/10																		*
+	* Ref:	learning.digitalskillsacademy.com												*
+	*		www.tutorialspoint.com/php/php_object_oriented.htm								*
+	*     	www.w3schools.com/																*
+	*	  	stackoverflow.com																*
+	*	   	php.net/manual																	*
+	*		code.tuts.com																	*
+	*****************************************************************************************/
+	/*css for pages*/
+	/*buttons in the nav bar at top of page*/
+	button {
+		background-color: #000;
+		color: white;
+		text-align: center;
+		padding: 12px 14px;
+	}
+	/*font size for the input fields on the add contact page also for the 
+	list elements on the find contacts page*/
+	input, select {
+		font-size: 20px;
+	}
+	/*color of text*/
+	legend {
+		color: red;
+	}
+	/*li float left, moves the list items from vertical to horizontial*/
+	li {
+		float: left;
+	}
+	/*links within the buttons*/
+	li a {
+		color: white;
+		/*remove the line from under the link*/
+		text-decoration: none;
+	}
+	/*used to widen the input fieldset area on the add contact page*/
+	span {
+		padding-right: 20em;	
+	}
+	/*table produced from the database methods*/
+	table {
+		width: 100;
+		font-size: 24px; 
+		font-family: Times New Roman, Times, serif;
+	}
+	/*table headers*/
+	th {
+		border-bottom: 1px solid red;
+		padding-right: 1cm;
+		text-align: left;
+		
+	}
+	/*use this to adjust the mobile header, so the border underline does go outside the main div border*/
+	#thM{
+		border-bottom: 1px solid red;
+		padding-right: 1px;
+		text-align: left;
+	}
+	/*padding added to all cells, to adjust for the length of email data field*/
+	td {
+		padding-right: 2cm;
+	}
+	/*adjust the padding in the mobile cell, data coming from the database table*/
+	#tdM{
+		padding-right: 1px
+	}
+	/*unorder list, nav bar at top of page*/
+	ul {
+		list-style-type: none;
+		overflow: hidden;
+		background-color: #000;
+		position: fixed;
+		top: 10%;
+		width: 48%;
+	}
+	/*use on the div containing the add contact input fields and on the div containing the find contact inputs */
+	.addPage {
+		position: fixed;
+		top: 20%;
+		font-size: 20px; 
+		font-family: Times New Roman, Times, serif;
+	}
+	/*used on the div that contains the data returned from the query to the find page*/
+	.contact {
+		position: fixed;
+		top: 45%;
+		font-size: 20px; 
+		font-weight: bold;
+		font-family: Times New Roman, Times, serif;
+	}
+	/*change color on the buttons in the nav bar*/
+	#btn1:hover, #btn2:hover, #btn3:hover {
+		background-color: red;
+		color: white;
+	}
+	/*used on the p tag to adjust area containing the returned data, find contact page*/
+	#field{
+		padding-right: 26.3em;
+		padding-top: 2em;
+	}
+	/*to center everything on all the pages*/
+	#main{
+		width: 50%;
+		height: 85%;
+		position: fixed;
+		left: 25%;
+		top: 5%;
+		background-color: white;
+		border-radius: 25px;
+		border: 2px solid black;
+		padding: 20px;
+	}
+	/*fix where the returned data will be position on the list contact page*/
+	#page {
+		position: fixed;
+		top: 20%;
+	}
+	/*fix the title at the top of the pages*/
+	#top{
+		position: fixed;
+		top: 5%;
+	}
+	/*submit button on the add contacts page*/
+	#sub {
+		float: right;
+		color: red;
+	}
