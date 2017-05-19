@@ -3,7 +3,7 @@
 	* Assignment: WE4.0 PHP Web App Assignment, Digital Skills Academy						*
 	* Student ID: D14128624																	*
 	* Email: james.hickey@webelevate.ie														*
-	* Date : 2016/02/10																		*
+	* Date : 2016/02/15																		*
 	* Ref: 	learning.digitalskillsacademy.com												*
 	*		www.tutorialspoint.com/php/php_object_oriented.htm								*
 	*      	www.w3schools.com/																*
@@ -61,8 +61,8 @@
 						include 'core/init.php';
 						$newConn = new dataBase("localhost","root","","assignment_iwp");
 						if (isset($_POST["query"])&&isset($_POST["fieldValue"])){
-							$field = $_POST["query"];
-							$fValue = $_POST["fieldValue"];
+							$field = trim($_POST["query"]);
+							$fValue = trim($_POST["fieldValue"]);
 							$newConn->findContact($field, $fValue);
 						}
 					?>

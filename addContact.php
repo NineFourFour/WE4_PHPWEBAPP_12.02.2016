@@ -3,7 +3,7 @@
 	* Assignment: WE4.0 PHP Web App Assignment, Digital Skills Academy						*
 	* Student ID: D14128624																	*
 	* Email: james.hickey@webelevate.ie														*
-	* Date : 2016/02/10																		*
+	* Date : 2016/02/15																		*
 	* Ref: 	www.tutorialspoint.com/php/php_object_oriented.htm								*
 	*      	www.w3schools.com/																*
 	*	   	stackoverflow.com																*
@@ -45,7 +45,8 @@
 						<input type="email" name="mailE" required>
 						<br><br>
 						Mobile : &emsp;
-						<input type="text" name="mobile" required>
+						<!--added a pattern match, kept the length of the number to min of 10 chars and max of 12, title__if not within this length-->
+						<input type="text" pattern="\w{10,12}" title="check number" name="mobile" required>
 						<br><br><br>
 						<input type="submit" value="Submit" id="sub">
 					</fieldset>
